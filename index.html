@@ -1,80 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Declares the document type and sets the language to English -->
+
 <head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
+    <!-- Meta Tags for Character Set, Compatibility, and Viewport -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document to UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with Internet Explorer -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamran Moqadam&trade; - Data Scientist</title>
+    <!-- Configures the viewport for responsiveness -->
+    <title>KamranMoqadam™ - Data Scientist</title>
+    <!-- Defines the title of the webpage displayed on the browser tab -->
 
-    <!-- Meta Description -->
+    <!-- Meta Description for SEO -->
     <meta name="description"
-          content="Kamran Moqadam, an experienced data scientist specializing in data analysis, machine learning, and artificial intelligence. Instructor at Maktab Sharif boot camps and software manager at PetroTech Diacorad.">
+          content="Kamran Moqadam, a seasoned data scientist specializing in data analysis, machine learning, and artificial intelligence. Instructor at Maktab Sharif and software manager at PetroTech Diacorad.">
+    <!-- Provides a brief description of the webpage for search engines -->
 
-    <!-- Meta Keywords -->
+    <!-- Meta Keywords for SEO -->
     <meta name="keywords"
-          content="Kamran Moqadam, data scientist, data analysis, machine learning, artificial intelligence, Python, Django, numpy, pandas, matplotlib, C++">
+          content="Kamran Moqadam, data scientist, data analysis, machine learning, artificial intelligence, Python, Django, NumPy, Pandas, Matplotlib, C++">
+    <!-- Lists keywords relevant to the webpage content for search engine optimization -->
 
-    <!-- Author -->
-    <meta name="author" content="Kamran Moqadam">
+    <!-- Author Metadata -->
+    <meta name="author" content="Kamran Moqadam"> <!-- Specifies the author of the webpage -->
 
-    <!-- Open Graph Meta Tags for Social Sharing -->
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Kamran Moqadam - Data Scientist">
+    <!-- Sets the title for the webpage when shared on social media -->
     <meta property="og:description"
-          content="Kamran Moqadam, an experienced data scientist specializing in data analysis, machine learning, and artificial intelligence. Instructor at Maktab Sharif boot camps and software manager at PetroTech Diacorad.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://kamranmoqadam.com/">
+          content="Kamran Moqadam, an expert in data analysis, machine learning, and AI. Instructor and software manager at leading institutions.">
+    <!-- Provides a description for the webpage when shared on social media -->
+    <meta property="og:type" content="website"> <!-- Specifies the type of content, in this case, a website -->
+    <meta property="og:url" content="https://kamranmoqadam.com/"> <!-- Specifies the URL of the webpage -->
     <meta property="og:image" content="./src/assets/images/profile-social-media.jpg">
-    <meta property="og:locale" content="en_US">
+    <!-- Defines the image URL used when sharing on social media -->
+    <meta property="og:locale" content="en_US"> <!-- Sets the locale of the webpage -->
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kamran Moqadam - Data Scientist">
+    <!-- Twitter Card Meta Tags for Sharing on Twitter -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- Specifies the Twitter card type to use for sharing -->
+    <meta name="twitter:title" content="Kamran Moqadam - Data Scientist"> <!-- Sets the title for the Twitter card -->
     <meta name="twitter:description"
-          content="Kamran Moqadam, an experienced data scientist specializing in data analysis, machine learning, and artificial intelligence. Instructor at Maktab Sharif boot camps and software manager at PetroTech Diacorad.">
-    <meta name="twitter:image" content="./src/assets/images/profile-social-media.jpg">
-    <meta name="twitter:site" content="@kamranmoqadam">
+          content="Kamran Moqadam, a data scientist specializing in AI, data analysis, and machine learning. Instructor at Maktab Sharif and software manager at PetroTech Diacorad.">
+    <!-- Provides a description for the Twitter card -->
+    <meta name="twitter:image" content="https://kamranmoqadam.com/src/assets/images/profile-social-media.jpg">
+    <!-- Defines the image to use for the Twitter card -->
+    <meta name="twitter:site" content="@kamranmoqadam"> <!-- Specifies the Twitter handle of the content owner -->
 
-    <!-- Favicon -->
-    <link rel="icon" href="./src/libs/icon/data-science-flat.ico" type="image/x-icon">
+    <!-- Favicon for Browser Tab Icon -->
+    <link rel="icon" href="./public/favicon/kamran-moqadam.ico" type="image/x-icon">
+    <!-- Links the favicon for the browser tab -->
 
     <!-- Android Chrome Icons -->
-    <link rel="icon" type="image/png" sizes="72x72" href="./src/libs/icon/Android Chrome/data-science-flat-72.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./src/libs/icon/Android Chrome/data-science-flat-96.png">
-    <link rel="manifest" href="./src/libs/icon/Android Chrome/manifest.json">
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="./public/favicon/android/kamran-moqadam-64.ico">
+    <!-- Favicon for Android Chrome (64x64) -->
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="./public/favicon/android/kamran-moqadam-96.ico">
+    <!-- Favicon for Android Chrome (96x96) -->
+    <link rel="manifest" href="./public/favicon/android/manifest.json"> <!-- Manifest file for Android Chrome -->
 
     <!-- iOS Safari Web Clip Icons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./src/libs/icon/iOS Safari Web Clip/data-science-flat-57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./src/libs/icon/iOS Safari Web Clip/data-science-flat-60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./src/libs/icon/iOS Safari Web Clip/data-science-flat-72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./src/libs/icon/iOS Safari Web Clip/data-science-flat-76.png">
+    <link rel="apple-touch-icon" sizes="32x32" href="./public/favicon/ios/kamran-moqadam-32.ico">
+    <!-- Icon for iOS Safari web clip (32x32) -->
+    <link rel="apple-touch-icon" sizes="48x48" href="./public/favicon/ios/kamran-moqadam-48.ico">
+    <!-- Icon for iOS Safari web clip (48x48) -->
+    <link rel="apple-touch-icon" sizes="64x64" href="./public/favicon/ios/kamran-moqadam-64.ico">
+    <!-- Icon for iOS Safari web clip (64x64) -->
+    <link rel="apple-touch-icon" sizes="96x96" href="./public/favicon/ios/kamran-moqadam-96.ico">
+    <!-- Icon for iOS Safari web clip (96x96) -->
 
-    <!-- Web Icons -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/libs/icon/Web/data-science-flat-16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/libs/icon/Web/data-science-flat-32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./src/libs/icon/Web/data-science-flat-96.png">
+    <!-- Web Icons for Different Browser Sizes -->
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="./public/favicon/web/kamran-moqadam-16.ico">
+    <!-- Favicon for web (16x16) -->
+    <link rel="icon" type="image/x-icon" sizes="24x24" href="./public/favicon/web/kamran-moqadam-24.ico">
+    <!-- Favicon for web (24x24) -->
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="./public/favicon/web/kamran-moqadam-32.ico">
+    <!-- Favicon for web (32x32) -->
+    <link rel="icon" type="image/x-icon" sizes="48x48" href="./public/favicon/web/kamran-moqadam-48.ico">
+    <!-- Favicon for web (48x48) -->
+    <link rel="icon" type="image/x-icon" sizes="64x64" href="./public/favicon/web/kamran-moqadam-64.ico">
+    <!-- Favicon for web (64x64) -->
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="./public/favicon/web/kamran-moqadam-96.ico">
+    <!-- Favicon for web (96x96) -->
 
-    <!-- Windows Icons -->
-    <meta name="msapplication-TileImage" content="./src/libs/icon/Windows/data-science-flat-70.png">
+    <!-- Windows Metro Icons -->
+    <meta name="msapplication-TileColor" content="#6200ea"> <!-- Sets the tile color for Windows Metro style -->
+    <meta name="msapplication-TileImage" content="./public/favicon/windows/kamran-moqadam-64.ico">
+    <!-- Sets the tile image for Windows Metro style -->
 
-    <!-- CSS Links -->
-    <link href="./src/styles/output.css" rel="stylesheet">
+    <!-- Stylesheets for Styling -->
+    <link href="./src/styles/output.css" rel="stylesheet"> <!-- Links the external CSS stylesheet for the webpage -->
 
-    <!-- Schema.org for Google+ -->
-    <meta itemprop="name" content="Kamran Moqadam - Data Scientist">
+    <!-- Schema.org Metadata for Google+ -->
+    <meta itemprop="name" content="Kamran Moqadam - Data Scientist"> <!-- Defines the name property for schema.org -->
     <meta itemprop="description"
-          content="Kamran Moqadam, an experienced data scientist specializing in data analysis, machine learning, and artificial intelligence. Instructor at Maktab Sharif boot camps and software manager at PetroTech Diacorad.">
+          content="Kamran Moqadam, a seasoned data scientist with expertise in AI, data analysis, and machine learning.">
+    <!-- Defines the description property for schema.org -->
     <meta itemprop="image" content="./src/assets/images/profile-social-media.jpg">
+    <!-- Defines the image property for schema.org -->
 
-    <!-- Social Media Links -->
-    <link rel="me" href="https://x.com/KamranMoqadam"/>
-    <link rel="me" href="https://www.facebook.com/Kamranmoqadam/"/>
-    <link rel="me" href="https://t.me/KamranMoqadam"/>
-    <link rel="me" href="https://www.instagram.com/kamranmoqadam/"/>
-    <link rel="me" href="https://github.com/KamranMoqadam"/>
-    <link rel="me" href="https://www.linkedin.com/in/kamran-moqadam/"/>
-    <link rel="me" href="https://api.whatsapp.com/send?phone=989129680187"/>
+    <!-- Social Media Links for Verifying Profiles -->
+    <link rel="me" href="https://x.com/KamranMoqadam"/> <!-- Links to the X.com (formerly Twitter) profile -->
+    <link rel="me" href="https://www.facebook.com/Kamranmoqadam/"/> <!-- Links to the Facebook profile -->
+    <link rel="me" href="https://t.me/KamranMoqadam"/> <!-- Links to the Telegram profile -->
+    <link rel="me" href="https://www.instagram.com/kamranmoqadam/"/> <!-- Links to the Instagram profile -->
+    <link rel="me" href="https://github.com/KamranMoqadam"/> <!-- Links to the GitHub profile -->
+    <link rel="me" href="https://www.linkedin.com/in/kamran-moqadam/"/> <!-- Links to the LinkedIn profile -->
+    <link rel="me" href="https://api.whatsapp.com/send?phone=989129680187"/> <!-- Links to the WhatsApp contact -->
+
+    <!-- tsparticles -->
+    <script src="src/scripts/main.js" defer></script>
+    <script src="src/scripts/preloader.js" defer></script>
+    <script src="./src/scripts/cursor.js" defer></script>
+    <script src="./src/scripts/title.js" defer></script>
+    <style>
+
+    </style>
 </head>
 
-<body>
+<body class="bg-main-dark">
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+<!-- Preloader -->
+<div id="preloader" class="fixed inset-0 flex items-center justify-center h-screen z-50 bg-main-dark">
+    <div class="loader"></div>
+</div>
+
+
+<div class="h-screen flex">
+    <!-- Sidebar -->
+    <aside class="w-1/4 bg-black py-14 px-6 flex flex-col justify-between">
+        <div>
+            <div>
+                <div class="title delay0">T</div>
+                <div class="title delay1">O</div>
+                <div class="title delay2">R</div>
+                <div class="title delay3">T</div>
+                <div class="title delay4">U</div>
+                <div class="title delay5">R</div>
+                <div class="title delay6">E</div>
+                <div class="space"></div>
+                <div class="title delay7">T</div>
+                <div class="title delay8">H</div>
+                <div class="title delay9">E</div>
+                <div class="space"></div>
+                <div class="title delay1">D</div>
+                <div class="title delay2">A</div>
+                <div class="title delay3">T</div>
+                <div class="title delay4">A</div>
+                <div class="space"></div>
+                <div class="title delay5">L</div>
+                <div class="title delay6">O</div>
+                <div class="title delay7">N</div>
+                <div class="title delay8">G</div>
+                <div class="space"></div>
+                <div class="title delay9">E</div>
+                <div class="title delay1">N</div>
+                <div class="title delay2">O</div>
+                <div class="title delay3">U</div>
+                <div class="title delay4">G</div>
+                <div class="title delay5">H</div>
+                <div class="title delay6">,</div>
+                <div class="space"></div>
+                <div class="title delay7">A</div>
+                <div class="title delay8">N</div>
+                <div class="title delay9">D</div>
+                <div class="space"></div>
+
+                <div class="title delay1">I</div>
+                <div class="title delay2">T</div>
+                <div class="space"></div>
+                <div class="title delay3">W</div>
+                <div class="title delay4">I</div>
+                <div class="title delay5">L</div>
+                <div class="title delay6">L</div>
+                <div class="space"></div>
+                <div class="title delay7">C</div>
+                <div class="title delay8">O</div>
+                <div class="title delay9">N</div>
+                <div class="title delay1">F</div>
+                <div class="title delay2">E</div>
+                <div class="title delay3">S</div>
+                <div class="title delay4">S</div>
+                <div class="space"></div>
+                <div class="title delay5">T</div>
+                <div class="title delay6">O</div>
+                <div class="space"></div>
+                <div class="title delay7">A</div>
+                <div class="title delay8">N</div>
+                <div class="title delay9">Y</div>
+                <div class="title delay1">T</div>
+                <div class="title delay2">H</div>
+                <div class="title delay3">I</div>
+                <div class="title delay4">N</div>
+                <div class="title delay5">G</div>
+                <div class="title delay6">.</div>
+            </div>
+            <nav class="py-20 space-y-4">
+                <a href="#" class="block text-white font-semibold" id="home">HOME</a>
+                <a href="#" class="block text-gray-400 hover:text-white">ABOUT</a>
+                <a href="#" class="block text-gray-400 hover:text-white">SERVICES</a>
+                <a href="#" class="block text-gray-400 hover:text-white">PORTFOLIO</a>
+                <a href="#" class="block text-gray-400 hover:text-white">NEWS</a>
+                <a href="#" class="block text-gray-400 hover:text-white">CONTACT</a>
+            </nav>
+        </div>
+        <div class="flex space-x-4 items-center justify-center">
+            <a href="https://www.linkedin.com/in/kamran-moqadam/">
+                <svg class="h-5 w-5 text-white hover:text-fourth-dark fill-current" xmlns="http://www.w3.org/2000/svg"
+                     fill="currentColor" viewBox="0 0 448 512">
+                    <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+                </svg>
+            </a>
+            <a href="https://x.com/KamranMoqadam">
+                <svg class="w-5 h-5 text-white hover:text-fourth-dark fill-current" role="img"
+                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                </svg>
+            </a>
+            <a href="https://github.com/KamranMoqadam">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24" role="img"
+                     class="h-5 w-5 text-white hover:text-fourth-dark" preserveAspectRatio="xMidYMid meet">
+                    <g fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"
+                              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/kamranmoqadam/">
+                <svg class="h-5 w-5 text-white hover:text-fourth-dark" viewBox="0 0 48 48" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor"
+                          d="M24 4.32c6.41 0 7.17.03 9.7.14 2.34.1 3.6.5 4.45.83 1.11.43 1.92.95 2.75 1.79a7.38 7.38 0 0 1 1.8 2.75c.32.85.72 2.12.82 4.46.11 2.53.14 3.29.14 9.7 0 6.4-.03 7.16-.14 9.68-.1 2.35-.5 3.61-.83 4.46a7.42 7.42 0 0 1-1.79 2.75 7.38 7.38 0 0 1-2.75 1.8c-.85.32-2.12.72-4.46.82-2.53.11-3.29.14-9.69.14-6.41 0-7.17-.03-9.7-.14-2.34-.1-3.6-.5-4.45-.83a7.42 7.42 0 0 1-2.75-1.79 7.38 7.38 0 0 1-1.8-2.75 13.2 13.2 0 0 1-.82-4.46c-.11-2.53-.14-3.29-.14-9.69 0-6.41.03-7.17.14-9.7.1-2.34.5-3.6.83-4.45A7.42 7.42 0 0 1 7.1 7.08a7.38 7.38 0 0 1 2.75-1.8 13.2 13.2 0 0 1 4.46-.82c2.52-.11 3.28-.14 9.69-.14ZM24 0c-6.52 0-7.33.03-9.9.14-2.54.11-4.3.53-5.81 1.12a11.71 11.71 0 0 0-4.26 2.77 11.76 11.76 0 0 0-2.77 4.25C.66 9.8.26 11.55.14 14.1A176.6 176.6 0 0 0 0 24c0 6.52.03 7.33.14 9.9.11 2.54.53 4.3 1.12 5.81a11.71 11.71 0 0 0 2.77 4.26 11.73 11.73 0 0 0 4.25 2.76c1.53.6 3.27 1 5.82 1.12 2.56.11 3.38.14 9.9.14 6.5 0 7.32-.03 9.88-.14 2.55-.11 4.3-.52 5.82-1.12 1.58-.6 2.92-1.43 4.25-2.76a11.73 11.73 0 0 0 2.77-4.25c.59-1.53 1-3.27 1.11-5.82.11-2.56.14-3.38.14-9.9 0-6.5-.03-7.32-.14-9.88-.11-2.55-.52-4.3-1.11-5.82-.6-1.6-1.41-2.94-2.75-4.27a11.73 11.73 0 0 0-4.25-2.76C38.2.67 36.45.27 33.9.15 31.33.03 30.52 0 24 0Z"></path>
+                    <path fill="currentColor"
+                          d="M24 11.67a12.33 12.33 0 1 0 0 24.66 12.33 12.33 0 0 0 0-24.66ZM24 32a8 8 0 1 1 0-16 8 8 0 0 1 0 16ZM39.7 11.18a2.88 2.88 0 1 1-5.76 0 2.88 2.88 0 0 1 5.75 0Z"></path>
+                </svg>
+            </a>
+        </div>
+        <p class="text-xs text-gray-400 mt-4 justify-center">© 2025 Kamran Moqadam. All rights reserved.</p>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="w-4/5 p-6 grid-bg flex flex-col items-center justify-center">
+        <!-- Grid Background -->
+        <div class="grid-overlay inset-0 z-0"></div>
+
+        <div class="text-center text-white">
+            <div class="blob-container">
+                <div class="blob-border"></div>
+                <div class="blob">
+                    <img src="./src/assets/images/profile.jpg" alt="Profile">
+                </div>
+            </div>
+        </div>
+        <div class="typewriter">
+            <h1 class="text-white text-4xl font-bold font-sans py-6">Hey there, I'm <span
+                    class="text-white font-semibold">Kamran Moqadam</span>.
+            </h1>
+        </div>
+        <p class="typing-text text-white font-sans"></p>
+    </div>
+</div>
+
 </body>
 </html>

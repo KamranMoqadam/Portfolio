@@ -1,0 +1,159 @@
+.title {
+    display: inline;
+    font-size: 14px;
+    color: #0000;
+    padding: 0;
+    margin: 0;
+    animation: blur-anime 5s ease-in-out infinite;
+}
+
+.space {
+    display: inline-block;
+    width: 4px;
+}
+
+:root {
+    --d: 1s;
+    --c: #3be9;
+    --f: #3bee;
+    --n: 30px;
+}
+
+.delay0 {
+    animation-delay: 0.0s;
+}
+
+.delay1 {
+    animation-delay: 0.2s;
+}
+
+.delay2 {
+    animation-delay: 0.4s;
+}
+
+.delay3 {
+    animation-delay: 0.6s;
+}
+
+.delay4 {
+    animation-delay: 0.8s;
+}
+
+.delay5 {
+    animation-delay: 1.0s;
+}
+
+.delay6 {
+    animation-delay: 1.2s;
+}
+
+.delay7 {
+    animation-delay: 1.4s;
+}
+
+.delay8 {
+    animation-delay: 1.6s;
+}
+
+.delay9 {
+    animation-delay: 1.8s;
+}
+
+
+@keyframes blur-anime {
+    0%, 60%, 100% {
+        text-shadow: 0 0 0 var(--c), 0 0 0 var(--c), 0 0 0 var(--c), 0 0 0 var(--c);
+    }
+    30% {
+        text-shadow: 0 calc(var(--n)) 0 var(--f), 0 calc(-1 * var(--n)) 0 var(--f), calc(var(--n)) 0 0 var(--f), calc(-1 * var(--n)) 0 0 var(--f);
+    }
+}
+
+/* Typing Effect */
+.typing-text::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: #3392EF;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid #3392EF; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #3392EF;
+    }
+}
+
+@keyframes blob {
+    0% {
+        border-radius: 50% 40% 60% 40% / 40% 50% 30% 60%;
+    }
+    50% {
+        border-radius: 40% 60% 50% 60% / 60% 40% 50% 40%;
+    }
+    100% {
+        border-radius: 50% 40% 60% 40% / 40% 50% 30% 60%;
+    }
+}
+
+.blob-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.blob-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+    z-index: -1;
+    animation: blob 6s infinite ease-in-out;
+}
+
+.blob {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    animation: blob 6s infinite ease-in-out;
+}
+
+.blob img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
