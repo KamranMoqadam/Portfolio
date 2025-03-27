@@ -1,0 +1,17 @@
+{
+ "name": "App",
+ "icons": [
+  {
+   "src": "/kamran-moqadam-64.ico",
+   "sizes": "64×64",
+   "type": "image/png",
+   "density": "1.5"
+  },
+  {
+   "src": "/kamran-moqadam-96.ico",
+   "sizes": "96×96",
+   "type": "image/png",
+   "density": "2.0"
+  }
+ ]
+}
