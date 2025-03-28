@@ -1,85 +1,191 @@
 /* fonts.css - Define custom font faces for Roboto */
-
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-Thin.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Thin'), url('src/libs/fonts/roboto/Roboto-Thin.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-Thin.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-ThinItalic.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-style: italic;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Thin Italic'), url('src/libs/fonts/roboto/Roboto-ThinItalic.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-ThinItalic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-Light.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Light'), url('src/libs/fonts/roboto/Roboto-Light.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-LightItalic.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-style: italic;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Light Italic'), url('src/libs/fonts/roboto/Roboto-LightItalic.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Regular'), url('src/libs/fonts/roboto/Roboto-Regular.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-RegularItalic.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-style: italic;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Italic'), url('src/libs/fonts/roboto/Roboto-Italic.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-RegularItalic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-Medium.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Medium'), url('src/libs/fonts/roboto/Roboto-Medium.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-Medium.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-MediumItalic.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-style: italic;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Medium Italic'), url('src/libs/fonts/roboto/Roboto-MediumItalic.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-MediumItalic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-Bold.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Bold'), url('src/libs/fonts/roboto/Roboto-Bold.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-BoldItalic.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-style: italic;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Bold Italic'), url('src/libs/fonts/roboto/Roboto-BoldItalic.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-BoldItalic.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-Black.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Black'), url('src/libs/fonts/roboto/Roboto-Black.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-Black.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('src/libs/fonts/roboto/Roboto-BlackItalic.ttf') format('truetype');
+    font-family: 'Roboto', sans-serif;
     font-weight: 900;
     font-style: italic;
+    font-display: swap;
+    src: local('Roboto'), local('Roboto Black Italic'), url('src/libs/fonts/roboto/Roboto-BlackItalic.woff') format('woff'),
+    url('src/libs/fonts/roboto/Roboto-BlackItalic.ttf') format('truetype');
+}
+
+/* fonts.css - Define custom font faces for Ubuntu */
+@font-face {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Light'), url('src/libs/fonts/Ubuntu/Ubuntu-L.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Regular'), url('src/libs/fonts/Ubuntu/Ubuntu-R.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Medium'), url('src/libs/fonts/Ubuntu/Ubuntu-M.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Bold'), url('src/libs/fonts/Ubuntu/Ubuntu-B.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Light Italic'), url('src/libs/fonts/Ubuntu/Ubuntu-LI.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/Ubuntu-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Italic'), url('src/libs/fonts/Ubuntu/Ubuntu-RI.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/Ubuntu-Italic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Medium Italic'), url('src/libs/fonts/Ubuntu/Ubuntu-MI.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/Ubuntu-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Bold Italic'), url('src/libs/fonts/Ubuntu/Ubuntu-BI.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/Ubuntu-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local('Ubuntu'), local('Ubuntu Condensed Regular'), url('src/libs/fonts/Ubuntu/Ubuntu-C.woff') format('woff'),
+    url("src/libs/fonts/Ubuntu/UbuntuCondensed-Regular.ttf") format("truetype");
 }

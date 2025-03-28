@@ -1,8 +1,13 @@
-@import url('cursor.css');
-@import url('background.css');
-@import url('loader.css');
-@import url('title_sidebar.css');
+@import "tailwindcss";
+@import './fonts.css';
+@import './style.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config "../../tailwind.config.js";
+/*@custom-variant dark (&:where(.dark, .dark *));*/
+
+@layer base {
+    * {
+        cursor: none;
+    }
+
+}
