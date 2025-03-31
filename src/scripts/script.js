@@ -202,7 +202,7 @@ document.querySelectorAll("a").forEach(link => {
 const typingText = document.querySelector('.typing-text');
 
 if (typingText) {
-    const texts = [' Web Developer  ', ' Data Scientist  ', ' Data Analysis  ', ' Machine Learning  ', ' Deep Learning  ', ' Artificial Intelligence (AI)  ', '  Sentiment Analysis  ', '  Software Development  '];
+    const texts = [' Web Developer  ', ' Data Scientist  ', ' Data Analysis  ', ' Machine Learning  ', ' Deep Learning  ', ' Artificial Intelligence (AI)  ', '  Sentiment Analysis  ', '  Software Development  ', '  Computer Vision  '];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -251,3 +251,11 @@ scroll_buttons.forEach((button, index) => {
         scroll_sections[index].scrollIntoView({ behavior: 'smooth' });
     });
 });
+function downloadFile() {
+    const link = document.createElement('a');
+    link.href = 'src/assets/docs/Kamran_Moqadam_Resume.pdf';
+    link.download = 'Kamran_Moqadam_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
