@@ -1,113 +1,130 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Declares the document type and sets the language to English -->
+<!-- Specifies the document type and language for the webpage (English) -->
+<html lang="en">
 
 <head>
-    <!-- Meta Tags for Character Set, Compatibility, and Viewport -->
-    <meta charset="UTF-8"> <!-- Sets the character encoding for the document to UTF-8 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with Internet Explorer -->
+    <!-- Defines the character encoding for the document to UTF-8, ensuring support for all characters -->
+    <meta charset="UTF-8">
+
+    <!-- Ensures that the page will render correctly on all versions of Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Configures the viewport to be responsive and adjusts for different device screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configures the viewport for responsiveness -->
-    <title>Kamran Moqadam™ - AI Researcher & Data Scientist</title>
-    <!-- Defines the title of the webpage displayed on the browser tab -->
 
-    <!-- Meta Description for SEO -->
+    <!-- Title of the webpage, displayed in the browser's title bar/tab -->
+    <title>Kamran Moqadam - AI Researcher & Data Scientist</title>
+
+    <!-- Meta description used by search engines for better SEO and rich snippets -->
     <meta name="description"
-          content="AI researcher, data scientist & software developer specializing in Python, ML & CV. Currently analyzing pipeline inspection data in the oil & gas industry.">
-    <!-- Provides a brief description of the webpage for search engines -->
+          content="Kamran Moqadam is an AI researcher, data scientist, and software developer with expertise in Python, machine learning, and computer vision. Specializing in pipeline inspection analytics within the oil and gas sector.">
 
-    <!-- Meta Keywords for SEO -->
+    <!-- Specifies the author of the webpage -->
+    <meta name="author" content="Kamran Moqadam">
+
+    <!-- Keywords for search engine optimization (SEO) to improve visibility and search rankings -->
     <meta name="keywords"
-          content="Kamran Moqadam, Software Developer, Data Scientist, Data Analysis, Artificial Intelligence, AI Researcher, Machine Learning, Deep Learning, Computer Vision, Python, Django, NumPy, Pandas, Matplotlib, C++ Pipeline Inspection, Oil and Gas, Environmental Sustainability">
+          content="Kamran Moqadam, AI Researcher, Data Scientist, Software Developer, Machine Learning, Deep Learning, Computer Vision, Python Programming, Oil and Gas Industry, Pipeline Inspection Analytics, Environmental Sustainability, Big Data, Predictive Maintenance">
 
-    <!-- Lists keywords relevant to the webpage content for search engine optimization -->
-
-    <!-- Author Metadata -->
-    <meta name="author" content="Kamran Moqadam"> <!-- Specifies the author of the webpage -->
-
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Kamran Moqadam - Data Scientist">
-    <!-- Sets the title for the webpage when shared on social media -->
+    <!-- Open Graph meta tags for better representation and sharing on social media platforms -->
+    <meta property="og:title" content="Kamran Moqadam - AI Researcher & Data Scientist">
     <meta property="og:description"
-          content="Kamran Moqadam, an expert in data analysis, machine learning, and AI. Instructor and software manager at leading institutions.">
-    <!-- Provides a description for the webpage when shared on social media -->
-    <meta property="og:type" content="website"> <!-- Specifies the type of content, in this case, a website -->
-    <meta property="og:url" content="https://kamranmoqadam.com/"> <!-- Specifies the URL of the webpage -->
-    <meta property="og:image" content="./src/assets/images/header.webp">
-    <!-- Defines the image URL used when sharing on social media -->
-    <meta property="og:locale" content="en_US"> <!-- Sets the locale of the webpage -->
+          content="AI researcher and data scientist specializing in machine learning, deep learning, and computer vision. Focused on pipeline inspection analytics and predictive maintenance in the oil and gas industry.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.kamranmoqadam.com/">
+    <meta property="og:image" content="https://www.kamranmoqadam.com/src/assets/images/header.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
 
-    <!-- Twitter Card Meta Tags for Sharing on Twitter -->
-    <meta name="twitter:card" content="summary_large_image"> <!-- Specifies the Twitter card type to use for sharing -->
-    <meta name="twitter:title" content="Kamran Moqadam - Data Scientist"> <!-- Sets the title for the Twitter card -->
+    <!-- Twitter Card meta tags to optimize the webpage's preview on Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kamran Moqadam - AI Researcher & Data Scientist">
     <meta name="twitter:description"
-          content="Kamran Moqadam, a data scientist specializing in AI, data analysis, and machine learning. Instructor at Maktab Sharif and software manager at PetroTech Diacorad.">
-    <!-- Provides a description for the Twitter card -->
-    <meta name="twitter:image" content="./src/assets/images/header.webp">
-    <!-- Defines the image to use for the Twitter card -->
-    <meta name="twitter:site" content="@kamranmoqadam"> <!-- Specifies the Twitter handle of the content owner -->
+          content="Kamran Moqadam, an expert in AI, machine learning, and data analysis, currently analyzing pipeline inspection data in the oil and gas industry.">
+    <meta name="twitter:image" content="https://www.kamranmoqadam.com/src/assets/images/header.webp">
+    <meta name="twitter:site" content="@kamranmoqadam">
 
-    <!-- Favicon for Browser Tab Icon -->
-    <link rel="icon" href="./src/libs/favicon/kamran-moqadam.ico" type="image/x-icon">
-    <!-- Links the favicon for the browser tab -->
+    <!-- Favicon for the browser tab icon -->
+    <link rel="icon" href="https://www.kamranmoqadam.com/src/libs/favicon/kamran-moqadam.ico" type="image/x-icon">
 
-    <!-- Android Chrome Icons -->
-    <link rel="icon" type="image/x-icon" sizes="64x64" href="./src/libs/favicon/android/kamran-moqadam-64.ico">
-    <!-- Favicon for Android Chrome (64x64) -->
-    <link rel="icon" type="image/x-icon" sizes="96x96" href="./src/libs/favicon/android/kamran-moqadam-96.ico">
-    <!-- Favicon for Android Chrome (96x96) -->
-    <link rel="manifest" href="./src/libs/favicon/android/manifest.json"> <!-- Manifest file for Android Chrome -->
+    <!-- Theme color to customize the browser UI -->
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#001020" media="(prefers-color-scheme: dark)">
 
-    <!-- iOS Safari Web Clip Icons -->
-    <link rel="apple-touch-icon" sizes="32x32" href="./src/libs/favicon/ios/kamran-moqadam-32.ico">
-    <!-- Icon for iOS Safari web clip (32x32) -->
-    <link rel="apple-touch-icon" sizes="48x48" href="./src/libs/favicon/ios/kamran-moqadam-48.ico">
-    <!-- Icon for iOS Safari web clip (48x48) -->
-    <link rel="apple-touch-icon" sizes="64x64" href="./src/libs/favicon/ios/kamran-moqadam-64.ico">
-    <!-- Icon for iOS Safari web clip (64x64) -->
-    <link rel="apple-touch-icon" sizes="96x96" href="./src/libs/favicon/ios/kamran-moqadam-96.ico">
-    <!-- Icon for iOS Safari web clip (96x96) -->
+    <!-- Referrer policy to control how the browser handles referrer information -->
+    <meta name="referrer-policy" content="strict-origin-when-cross-origin">
 
-    <!-- Web Icons for Different Browser Sizes -->
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="./src/libs/favicon/web/kamran-moqadam-16.ico">
-    <!-- Favicon for web (16x16) -->
-    <link rel="icon" type="image/x-icon" sizes="24x24" href="./src/libs/favicon/web/kamran-moqadam-24.ico">
-    <!-- Favicon for web (24x24) -->
-    <link rel="icon" type="image/x-icon" sizes="32x32" href="./src/libs/favicon/web/kamran-moqadam-32.ico">
-    <!-- Favicon for web (32x32) -->
-    <link rel="icon" type="image/x-icon" sizes="48x48" href="./src/libs/favicon/web/kamran-moqadam-48.ico">
-    <!-- Favicon for web (48x48) -->
-    <link rel="icon" type="image/x-icon" sizes="64x64" href="./src/libs/favicon/web/kamran-moqadam-64.ico">
-    <!-- Favicon for web (64x64) -->
-    <link rel="icon" type="image/x-icon" sizes="96x96" href="./src/libs/favicon/web/kamran-moqadam-96.ico">
-    <!-- Favicon for web (96x96) -->
+    <!-- Preconnect to a reliable external server to improve load performance for Cloudflare CDN -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-    <!-- Windows Metro Icons -->
-    <meta name="msapplication-TileColor" content="#6200ea"> <!-- Sets the tile color for Windows Metro style -->
-    <meta name="msapplication-TileImage" content="./src/libs/favicon/windows/kamran-moqadam-64.ico">
-    <!-- Sets the tile image for Windows Metro style -->
+    <!-- Robots meta tag to control search engine indexing -->
+    <meta name="robots" content="index, follow">
 
-    <!-- Stylesheets for Styling -->
-    <link href="./src/styles/output.css" rel="stylesheet"> <!-- Links the external CSS stylesheet for the webpage -->
+    <!-- Google site verification for SEO purposes -->
+    <meta name="google-site-verification" content="d7M72qdF3UpB8lQU94dW3rsAJKX3aCzey9OBVKuZZl8">
 
-    <!-- Schema.org Metadata for Google+ -->
-    <meta itemprop="name" content="Kamran Moqadam - Data Scientist"> <!-- Defines the name property for schema.org -->
+    <!-- Favicon links for various platforms and sizes -->
+    <!-- Android Chrome Favicon for various screen sizes -->
+    <link rel="icon" type="image/x-icon" sizes="64x64"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/android/kamran-moqadam-64.ico">
+    <link rel="icon" type="image/x-icon" sizes="96x96"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/android/kamran-moqadam-96.ico">
+    <link rel="manifest" href="https://www.kamranmoqadam.com/src/libs/favicon/android/manifest.json">
+
+    <!-- iOS Safari Web Clip Favicon for various screen sizes -->
+    <link rel="apple-touch-icon" sizes="32x32"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/ios/kamran-moqadam-32.ico">
+    <link rel="apple-touch-icon" sizes="48x48"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/ios/kamran-moqadam-48.ico">
+    <link rel="apple-touch-icon" sizes="64x64"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/ios/kamran-moqadam-64.ico">
+    <link rel="apple-touch-icon" sizes="96x96"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/ios/kamran-moqadam-96.ico">
+
+    <!-- Web Favicon for various screen sizes -->
+    <link rel="icon" type="image/x-icon" sizes="16x16"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/web/kamran-moqadam-16.ico">
+    <link rel="icon" type="image/x-icon" sizes="24x24"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/web/kamran-moqadam-24.ico">
+    <link rel="icon" type="image/x-icon" sizes="32x32"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/web/kamran-moqadam-32.ico">
+    <link rel="icon" type="image/x-icon" sizes="48x48"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/web/kamran-moqadam-48.ico">
+    <link rel="icon" type="image/x-icon" sizes="64x64"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/web/kamran-moqadam-64.ico">
+    <link rel="icon" type="image/x-icon" sizes="96x96"
+          href="https://www.kamranmoqadam.com/src/libs/favicon/web/kamran-moqadam-96.ico">
+
+    <!-- Windows Metro Favicon for pinning to start menu -->
+    <meta name="msapplication-TileColor" content="#6200ea">
+    <meta name="msapplication-TileImage"
+          content="https://www.kamranmoqadam.com/src/libs/favicon/windows/kamran-moqadam-64.ico">
+
+    <!-- External CSS file for styling the webpage -->
+    <link rel="preload" href="https://www.kamranmoqadam.com/src/styles/output.css" as="style">
+    <link rel="stylesheet" href="https://www.kamranmoqadam.com/src/styles/output.css">
+    <!-- Structured Data using Schema.org to enhance search engine results -->
+    <meta itemprop="name" content="Kamran Moqadam - AI Researcher & Data Scientist">
     <meta itemprop="description"
-          content="Kamran Moqadam, a seasoned data scientist with expertise in AI, data analysis, and machine learning.">
-    <!-- Defines the description property for schema.org -->
-    <meta itemprop="image" content="./src/assets/images/profile.webp">
-    <!-- Defines the image property for schema.org -->
+          content="Kamran Moqadam is a highly experienced AI researcher and data scientist with expertise in machine learning, deep learning, and computer vision, currently contributing to the oil and gas industry through pipeline inspection analytics.">
+    <meta itemprop="image" content="https://www.kamranmoqadam.com/src/assets/images/profile.webp">
 
-    <!-- Social Media Links for Verifying Profiles -->
-    <link rel="me" href="https://x.com/KamranMoqadam"/> <!-- Links to the X.com (formerly Twitter) profile -->
-    <link rel="me" href="https://www.facebook.com/Kamranmoqadam/"/> <!-- Links to the Facebook profile -->
-    <link rel="me" href="https://t.me/KamranMoqadam"/> <!-- Links to the Telegram profile -->
-    <link rel="me" href="https://www.instagram.com/kamranmoqadam/"/> <!-- Links to the Instagram profile -->
-    <link rel="me" href="https://github.com/KamranMoqadam"/> <!-- Links to the GitHub profile -->
-    <link rel="me" href="https://www.linkedin.com/in/kamran-moqadam/"/> <!-- Links to the LinkedIn profile -->
-    <link rel="me" href="https://api.whatsapp.com/send?phone=989129680187"/> <!-- Links to the WhatsApp contact -->
-    <link rel="canonical" href="https://www.kamranmoqadam.com/" />
-    <link rel="alternate" hreflang="en" href="https://www.kamranmoqadam.com/" />
-    <link rel="alternate" hreflang="x-default" href="https://www.kamranmoqadam.com/" />
+    <!-- Social Media Profile Links for Verification and Connections -->
+    <link rel="me" href="https://x.com/KamranMoqadam"/>
+    <link rel="me" href="https://www.facebook.com/Kamranmoqadam/"/>
+    <link rel="me" href="https://t.me/KamranMoqadam"/>
+    <link rel="me" href="https://www.instagram.com/kamranmoqadam/"/>
+    <link rel="me" href="https://github.com/KamranMoqadam"/>
+    <link rel="me" href="https://www.linkedin.com/in/kamran-moqadam/"/>
+    <link rel="me" href="https://api.whatsapp.com/send?phone=989129680187"/>
+
+    <!-- Canonical link to avoid duplicate content issues and ensure proper indexing -->
+    <link rel="canonical" href="https://www.kamranmoqadam.com/">
+    <link rel="alternate" hreflang="en" href="https://www.kamranmoqadam.com/">
+    <link rel="alternate" hreflang="x-default" href="https://www.kamranmoqadam.com/">
+
+    <!-- Structured Data in JSON-LD format for Rich Snippets in Search Engines -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -115,37 +132,47 @@
             "name": "Kamran Moqadam",
             "jobTitle": "AI Researcher, Data Scientist & Software Engineer",
             "url": "https://www.kamranmoqadam.com/",
-            "image": "https://www.kamranmoqadam.com/profile.jpg",
+            "image": "https://www.kamranmoqadam.com/src/assets/images/profile.webp",
             "sameAs": [
                 "https://www.linkedin.com/in/kamranmoqadam",
                 "https://github.com/kamranmoqadam",
-                "https://twitter.com/kamranmoqadam",
-                "https://www.instagram.com/kamranmoqadam/"
+                "https://x.com/KamranMoqadam",
+                "https://www.instagram.com/kamranmoqadam/",
+                "https://www.facebook.com/Kamranmoqadam/"
             ],
             "worksFor": {
                 "@type": "Organization",
-                "name": "Oil & Gas Industry"
+                "name": "Petrotech Diaco Rad"
             },
             "alumniOf": [
                 {
                     "@type": "EducationalOrganization",
-                    "name": "University Name Here"
+                    "name": "Islamic Azad University"
                 }
             ],
-            "description": "Experienced AI researcher and data scientist specializing in machine learning, deep learning, and computer vision, currently working in the oil and gas industry on pipeline inspection analytics.",
+            "description": "Experienced AI researcher and data scientist specializing in machine learning, deep learning, and computer vision. Currently working in the oil and gas industry on pipeline inspection analytics.",
             "knowsAbout": [
+                "AI Researcher",
+                "Data Scientist",
+                "Software Developer",
                 "Machine Learning",
                 "Deep Learning",
                 "Computer Vision",
-                "Data Science",
-                "Python",
+                "Python Programming",
                 "Big Data",
+                "Oil and Gas Industry",
+                "Pipeline Inspection Analytics",
+                "Environmental Sustainability",
+                "Predictive Maintenance",
                 "Artificial Intelligence"
             ]
         }
     </script>
-    <!-- tsparticles -->
-    <script src="./src/scripts/script.js" defer></script>
+
+    <!-- External JavaScript file for additional functionality -->
+    <script src="https://www.kamranmoqadam.com/src/scripts/script.js" defer></script>
+
+    <!-- Font Awesome CSS for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 
@@ -245,36 +272,73 @@
             </button>
         </section>
         <section id="about" class="section min-h-screen p-8 flex flex-col hidden font-ubuntu">
-            <div class="font-ubuntu pt-8 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">
+            <div class="font-ubuntu pt-8 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center
+                sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">
                 <h2 class="text-3xl font-bold text-center font-ubuntu">ABOUT ME</h2>
                 <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
                 <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
-                    I am an <strong>experienced software developer, data scientist, and AI researcher</strong>. I specialize in <strong>Python programming, machine learning, deep learning, and computer vision</strong>. Currently, I am pursuing a <strong>Ph.D. in Computer Science</strong> with a focus on <strong>Artificial Intelligence</strong>. My research applies cutting-edge AI techniques to solve real-world industrial challenges.
+                    I am an <strong>experienced software developer, data scientist, and AI researcher</strong>
+                    specializing in <strong>Python programming, machine learning, deep learning, and computer
+                    vision</strong>. Currently, I am pursuing a <strong>Ph.D. in Computer Science</strong> with a focus
+                    on <strong>Artificial Intelligence</strong>, applying cutting-edge AI techniques to solve real-world
+                    industrial challenges.
                 </p>
-                <h3 class="w-11/12 px-8 pt-8 text-2xl font-bold text-start font-ubuntu">Technical Skills and Expertise</h3>
+                <h3 class="w-11/12 px-8 pt-8 text-2xl font-bold text-start font-ubuntu">Technical Skills and
+                    Expertise</h3>
                 <ul class="w-11/12 pl-16 pr-8 pt-4 text-start space-y-2 font-ubuntu list-disc marker:text-custom-dark dark:marker:text-custom-light">
-                    <li><strong>Python Development:</strong> Proficient in building scalable and efficient applications.</li>
-                    <li><strong>Web Development:</strong> Expertise in Django, Flask, and FastAPI for high-performance web applications.</li>
-                    <li><strong>Database Management:</strong> Skilled in PostgreSQL, Redis, and MongoDB for handling large datasets.</li>
-                    <li><strong>Machine Learning & Deep Learning:</strong> Specializing in predictive modeling, anomaly detection, and time-series analysis.</li>
-                    <li><strong>Computer Vision & Object Detection:</strong> Experience in OpenCV, TensorFlow, and PyTorch for AI-driven image processing.</li>
-                    <li><strong>Big Data Processing:</strong> Handling large-scale datasets for predictive maintenance and defect detection.</li>
-                    <li><strong>Automation & Web Scraping:</strong> Using Selenium and BeautifulSoup for automated data collection.</li>
-                    <li><strong>Cloud & Containerization:</strong> Proficient in Docker, Celery, RabbitMQ, and Linux-based system administration.</li>
+                    <li><strong>Python Development:</strong> Proficient in building scalable and efficient applications.
+                    </li>
+                    <li><strong>Web Development:</strong> Expertise in Django, Flask, and FastAPI for high-performance
+                        web applications.
+                    </li>
+                    <li><strong>Database Management:</strong> Skilled in PostgreSQL, Redis, and MongoDB for handling
+                        large datasets.
+                    </li>
+                    <li><strong>Machine Learning & Deep Learning:</strong> Specializing in predictive modeling, anomaly
+                        detection, and time-series analysis.
+                    </li>
+                    <li><strong>Computer Vision & Object Detection:</strong> Extensive experience in OpenCV, TensorFlow,
+                        and PyTorch for AI-driven image processing.
+                    </li>
+                    <li><strong>Big Data Processing:</strong> Handling large-scale industrial datasets for predictive
+                        maintenance and defect detection.
+                    </li>
+                    <li><strong>Automation & Web Scraping:</strong> Using Selenium and BeautifulSoup for automated data
+                        collection and analysis.
+                    </li>
+                    <li><strong>Cloud & Containerization:</strong> Proficient in Docker, Celery, RabbitMQ, and
+                        Linux-based system administration.
+                    </li>
                 </ul>
-                <h4 class="w-11/12 px-8 pt-8 text-2xl font-bold text-start font-ubuntu">Current Work in the Oil & Gas Industry</h4>
+                <h4 class="w-11/12 px-8 pt-8 text-2xl font-bold text-start font-ubuntu">Current Work in the Oil & Gas
+                    Industry</h4>
                 <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
-                    I analyze <strong>pipeline inspection data</strong> in the oil and gas sector using AI and machine learning. My focus is on <strong>detecting pipeline defects</strong>, improving efficiency, and optimizing predictive maintenance.
+                    I am actively working on <strong>pipeline inspection data analysis</strong> in the oil and gas
+                    sector, utilizing advanced machine learning, artificial intelligence, and deep learning techniques.
                 </p>
                 <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
-                    AI-driven analytics help industries enhance <strong>safety</strong>, reduce costs, and extend equipment lifespan.
+                    My focus is on <strong>detecting pipeline defects, improving operational efficiency, and optimizing
+                    predictive maintenance strategies</strong>. By leveraging AI-driven analytics, I help industries
+                    enhance <strong>safety, reduce costs, and maximize equipment lifespan</strong>.
                 </p>
-                <h5 class="w-11/12 px-8 pt-8 text-2xl font-bold text-start font-ubuntu">Passion for Environmental Sustainability & AI Innovations</h5>
+                <h5 class="w-11/12 px-8 pt-8 text-2xl font-bold text-start font-ubuntu">Passion for Environmental
+                    Sustainability & AI Innovations</h5>
                 <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
-                    I am passionate about <strong>environmental sustainability</strong> and using AI for ecological preservation. My undergraduate project focused on <strong>3D animation for environmental protection</strong>. My Master’s thesis explored <strong>sentiment analysis</strong> using <strong>Deep Belief Networks (DBN) and Long Short-Term Memory (LSTM)</strong> models.
+                    Beyond industrial applications, I am deeply passionate about <strong>environmental
+                    sustainability</strong> and leveraging AI for <strong>ecological preservation</strong>.
                 </p>
                 <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
-                    AI and data science play a key role in addressing environmental challenges. From <strong>AI-powered energy efficiency solutions</strong> to <strong>smart environmental monitoring</strong>, I strive to integrate technology with sustainability.
+                    My undergraduate project involved <strong>developing a 3D animation to promote environmental
+                    protection</strong>, showcasing my commitment to sustainability. Additionally, my <strong>Master’s
+                    thesis focused on sentiment analysis</strong> in social networks using <strong>Deep Belief Networks
+                    (DBN) and Long Short-Term Memory (LSTM)</strong> models, demonstrating my expertise in <strong>natural
+                    language processing (NLP) and deep learning</strong>.
+                </p>
+                <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
+                    I strongly believe that <strong>technology, AI, and data science</strong> play a crucial role in
+                    tackling global environmental challenges. From <strong>AI-powered energy efficiency
+                    solutions</strong> to <strong>smart environmental monitoring systems</strong>, I am committed to
+                    integrating <strong>technology with sustainability initiatives</strong> to create a better future.
                 </p>
                 <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
                 <div class="w-11/12 px-8 flex flex-row items-center justify-start max-md:flex-col">
@@ -282,8 +346,12 @@
                         <li><strong>Birthday:</strong> 04.09.1997</li>
                         <li><strong>Age:</strong> 28</li>
                         <li><strong>Address:</strong> Valiasr St, Tehran, Iran</li>
-                        <li><strong>Email:</strong> <a href="mailto:kamranmoqadam97@gmail.com" class="hover:text-blue-500">KamranMoqadam97@Gmail.Com</a></li>
-                        <li><strong>Phone:</strong> <a href="tel:+989129680187" class="hover:text-blue-500">+98 912 96 80 187</a></li>
+                        <li><strong>Email:</strong>
+                            <a href="mailto:kamranmoqadam97@gmail.com" class="hover:text-blue-500">KamranMoqadam97@Gmail.Com</a>
+                        </li>
+                        <li><strong>Phone:</strong>
+                            <a href="tel:+989129680187" class="hover:text-blue-500">+98 912 96 80 187</a>
+                        </li>
                     </ul>
                     <ul class="max-md:pt-2 w-11/12 pl-16 pr-8 text-start space-y-2 font-ubuntu list-disc marker:text-custom-dark dark:marker:text-custom-light">
                         <li><strong>Nationality:</strong> Iranian</li>
@@ -294,8 +362,11 @@
                     </ul>
                 </div>
                 <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
-                <div class="flex justify-end lg:justify-end md:justify-center items-end w-11/12 sm:justify-center max-sm:justify-center">
-                    <button onclick="downloadFile()" type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">Download CV</button>
+                <div class="flex justify-end lg:justify-end md:justify-center items-end w-11/12  sm:justify-center max-sm:justify-center">
+                    <button onclick="downloadFile()" type="button"
+                            class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                        Download CV
+                    </button>
                 </div>
             </div>
             <button class="scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">
