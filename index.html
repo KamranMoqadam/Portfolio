@@ -146,36 +146,38 @@
     </nav>
 
     <!-- Sidebar -->
-    <aside id="sidebar" class="font-ubuntu h-screen w-1/4 bg-black py-14 px-4 flex-col justify-between hidden lg:flex">
-        <p class=" mx-6 text-white font-light italic flex items-start sm:text-xs md:text-sm lg:text-base text-lg">
-            Torture the data long enough, and it will confess to anything.</p>
-        <nav class="font-ubuntu py-10 mx-8 flex flex-col font-normal text-gray-400 sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
-            <a href="#home" class="block py-2 text-blue-500 font-bold menu-link font-ubuntu">HOME</a>
-            <a href="#about" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">ABOUT</a>
-            <a href="#services" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">SERVICES</a>
-            <a href="#portfolio" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">PORTFOLIO</a>
-            <a href="#news" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">NEWS</a>
-            <a href="#contact" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">CONTACT</a>
-        </nav>
-        <div class="flex flex-col space-y-5 place-items-center">
-            <div class="flex space-x-3 items-center justify-center text-white text-xl md:flex-wrap-reverse">
-                <a class="hover:text-blue-500" href="https://www.linkedin.com/in/kamran-moqadam/"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a class="hover:text-blue-500" href="https://t.me/KamranMoqadam"><i
-                        class="fa-brands fa-telegram"></i></a>
-                <a class="hover:text-blue-500" href="https://www.facebook.com/Kamranmoqadam/"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a class="hover:text-blue-500" href="https://github.com/KamranMoqadam"><i
-                        class="fa-brands fa-github "></i></a>
-                <a class="hover:text-blue-500" href="https://x.com/KamranMoqadam"><i
-                        class="fa-brands fa-twitter"></i></a>
-                <a class="hover:text-blue-500" href="https://api.whatsapp.com/send?phone=989129680187"><i
-                        class="fa-brands fa-whatsapp"></i></a>
-                <a class="hover:text-blue-500" href="https://www.instagram.com/kamranmoqadam/"><i
-                        class="fa-brands fa-instagram"></i></a>
+    <aside id="sidebar" class="font-ubuntu h-screen w-1/4 flex-col justify-between hidden lg:flex">
+        <div class="fixed top-0 left-0 font-ubuntu h-screen w-1/5 bg-black py-14 px-4  flex flex-col justify-between">
+            <p class=" mx-6 text-white font-light italic flex items-start sm:text-xs md:text-sm lg:text-base text-lg">
+                Torture the data long enough, and it will confess to anything.</p>
+            <nav class="font-ubuntu py-10 mx-8 flex flex-col font-normal text-gray-400 sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+                <a href="#home" class="block py-2 text-blue-500 font-bold menu-link font-ubuntu">HOME</a>
+                <a href="#about" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">ABOUT</a>
+                <a href="#services" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">SERVICES</a>
+                <a href="#portfolio" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">PORTFOLIO</a>
+                <a href="#news" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">NEWS</a>
+                <a href="#contact" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">CONTACT</a>
+            </nav>
+            <div class="flex flex-col space-y-5 place-items-center">
+                <div class="flex space-x-3 items-center justify-center text-white text-xl md:flex-wrap-reverse">
+                    <a class="hover:text-blue-500" href="https://www.linkedin.com/in/kamran-moqadam/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a class="hover:text-blue-500" href="https://t.me/KamranMoqadam"><i
+                            class="fa-brands fa-telegram"></i></a>
+                    <a class="hover:text-blue-500" href="https://www.facebook.com/Kamranmoqadam/"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a class="hover:text-blue-500" href="https://github.com/KamranMoqadam"><i
+                            class="fa-brands fa-github "></i></a>
+                    <a class="hover:text-blue-500" href="https://x.com/KamranMoqadam"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a class="hover:text-blue-500" href="https://api.whatsapp.com/send?phone=989129680187"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                    <a class="hover:text-blue-500" href="https://www.instagram.com/kamranmoqadam/"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="font-ubuntu text-xs text-gray-400 flex items-end justify-center">
+                    ©2025 Kamran Moqadam. All rights reserved.</p>
             </div>
-            <p class="font-ubuntu text-xs text-gray-400 flex items-end justify-center">
-                ©2025 Kamran Moqadam. All rights reserved.</p>
         </div>
     </aside>
     <!-- Main Content -->
@@ -197,10 +199,63 @@
             </div>
         </section>
         <section id="about" class="section min-h-screen p-8 flex flex-col hidden font-ubuntu">
-            <div class="font-ubuntu pt-10 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center
+            <div class="font-ubuntu pt-8 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center
                 sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">
                 <h1 class="text-3xl font-bold text-center font-ubuntu">ABOUT ME</h1>
                 <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
+                <p class="w-11/12 px-8 pt-4 text-justify font-light">
+                    I am a seasoned software developer with extensive experience in Python programming and a broad skill
+                    set across various technology domains. I am currently pursuing a Ph.D. in Computer Science with a
+                    specialization in Artificial Intelligence. My academic journey also includes a master's degree in
+                    Information Technology and a bachelor's degree in Software Engineering. Over the years, I have
+                    gained valuable experience in both industrial and academic settings as a web designer, software
+                    developer, and programming mentor.
+                </p>
+                <p class="w-11/12 px-8 pt-4 text-justify font-light">
+                    My expertise primarily revolves around Python, and I have extensive experience in web development
+                    using frameworks such as Django, Flask, and FastAPI. I am also highly skilled in database
+                    management, specializing in PostgreSQL, Redis, and MongoDB. On the front-end side, I have experience
+                    in crafting modern and visually appealing web applications using HTML, CSS, and the Tailwind CSS
+                    framework.
+                </p>
+                <p class="w-11/12 px-8 pt-4 text-justify font-light">
+                    Beyond web development, I actively work in the field of Data Science, leveraging machine learning
+                    and deep learning techniques to solve complex problems. I specialize in processing and analyzing
+                    large datasets, working with time-series data, and implementing advanced predictive models.
+                    Additionally, I have deep expertise in image processing and object detection, utilizing tools like
+                    OpenCV, TensorFlow, and PyTorch to develop intelligent systems capable of recognizing and
+                    classifying objects with high accuracy.
+                </p>
+                <p class="w-11/12 px-8 pt-4 text-justify font-light">
+                    Currently, I am working on pipeline inspection data analysis in the oil and gas industry, where I
+                    apply advanced machine learning and artificial intelligence techniques to detect pipeline defects,
+                    improve efficiency, and enhance predictive maintenance strategies.
+                </p>
+                <p class="w-11/12 px-8 pt-4 text-justify font-light">
+                    My passion for technology extends beyond industrial applications. My undergraduate project was
+                    focused on developing a 3D animation to promote environmental protection, demonstrating my
+                    commitment to sustainability and ecological awareness. Furthermore, my master's thesis explored
+                    sentiment analysis in social networks using a hybrid approach combining Deep Belief Networks (DBN)
+                    and Long Short-Term Memory (LSTM) models, showcasing my expertise in natural language processing and
+                    deep learning.
+                </p>
+                <p class="w-11/12 px-8 pt-4 text-justify font-light">
+                    I am deeply interested in environmental conservation and sustainability, believing that technology
+                    can play a crucial role in addressing global ecological challenges. Whether through AI-driven
+                    solutions for energy efficiency, smart environmental monitoring systems, or innovative visualization
+                    techniques, I am committed to leveraging my expertise to contribute to a more sustainable future.
+                </p>
+                <p class="w-11/12 px-8 pt-4 text-justify font-light">
+                    My technical proficiency extends to automation and web scraping, where I employ Selenium for
+                    efficient data extraction and interaction with web content. I am also experienced in
+                    containerization with Docker, task queuing with Celery and RabbitMQ, and proficient in Linux-based
+                    system administration.
+                </p>
+                <p class="w-11/12 px-8 pt-4 text-justify font-light">
+                    With a strong foundation in artificial intelligence, software development, and data science, I
+                    continuously seek to push the boundaries of technology, delivering innovative solutions that drive
+                    progress in both industry and environmental sustainability.
+                </p>
             </div>
         </section>
         <section id="services" class="font-ubuntu section min-h-screen p-8 flex flex-col hidden">
