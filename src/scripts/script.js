@@ -259,3 +259,9 @@ function downloadFile() {
     link.click();
     document.body.removeChild(link);
 }
+
+let map = L.map('map').setView([35.6892, 51.3890], 12);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
