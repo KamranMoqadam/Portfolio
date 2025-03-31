@@ -102,8 +102,10 @@
           content="https://www.kamranmoqadam.com/src/libs/favicon/windows/kamran-moqadam-64.ico">
 
     <!-- External CSS file for styling the webpage -->
-    <link rel="preload" href="https://www.kamranmoqadam.com/src/styles/output.css" as="style">
-    <link rel="stylesheet" href="https://www.kamranmoqadam.com/src/styles/output.css">
+        <link rel="preload" href="https://www.kamranmoqadam.com/src/styles/output.css" as="style">
+        <link rel="stylesheet" href="https://www.kamranmoqadam.com/src/styles/output.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<!--    <link rel="stylesheet" href="./src/styles/output.css">-->
     <!-- Structured Data using Schema.org to enhance search engine results -->
     <meta itemprop="name" content="Kamran Moqadam - AI Researcher & Data Scientist">
     <meta itemprop="description"
@@ -169,11 +171,15 @@
         }
     </script>
 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
     <!-- External JavaScript file for additional functionality -->
-    <script src="https://www.kamranmoqadam.com/src/scripts/script.js" defer></script>
+        <script src="https://www.kamranmoqadam.com/src/scripts/script.js" defer></script>
+<!--    <script src="./src/scripts/script.js" defer></script>-->
 
     <!-- Font Awesome CSS for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
 </head>
 
 <body class="bg-custom-light dark:bg-custom-dark font-ubuntu">
@@ -204,15 +210,15 @@
          class="font-ubuntu lg:hidden font-light fixed flex flex-col z-1010 h-screen w-screen items-center justify-center dark:text-custom-light text-custom-dark p-10 transform -translate-x-full transition-transform duration-300 text-2xl">
         <a href="#home" class="block py-2 text-blue-500 font-bold menu-link font-ubuntu">HOME</a>
         <a href="#about" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">ABOUT ME</a>
-        <a href="#services" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">SERVICES</a>
-        <a href="#portfolio" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">PORTFOLIO</a>
-        <a href="#news" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">NEWS</a>
+<!--        <a href="#skills" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">SKILLS</a>-->
+<!--        <a href="#services" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">SERVICES</a>-->
+<!--        <a href="#portfolio" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">PORTFOLIO</a>-->
         <a href="#contact" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">CONTACT</a>
     </nav>
 
     <!-- Sidebar -->
     <aside id="sidebar" class="font-ubuntu h-screen w-1/4 flex flex-col justify-between hidden lg:flex">
-        <div class="fixed top-0 left-0 font-ubuntu h-screen w-1/5 bg-black py-14 px-4 flex flex-col justify-between">
+        <div class="fixed top-0 left-0 font-ubuntu h-screen w-1/5 dark:bg-black bg-custom-dark py-14 px-4 flex flex-col justify-between">
             <div class="mx-6 text-white font-ubuntu font-light italic">
                 <p class="flex items-start sm:text-xs md:text-sm lg:text-base text-lg">Torture the data long enough,</p>
                 <p class="flex items-start sm:text-xs md:text-sm lg:text-base text-lg">and it will confess to
@@ -221,26 +227,30 @@
             <nav class="font-ubuntu py-10 mx-8 flex flex-col font-normal text-gray-400 sm:text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
                 <a href="#home" class="block py-2 text-blue-500 font-bold menu-link font-ubuntu">HOME</a>
                 <a href="#about" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">ABOUT ME</a>
-                <a href="#services" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">SERVICES</a>
-                <a href="#portfolio" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">PORTFOLIO</a>
-                <a href="#news" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">NEWS</a>
+<!--                <a href="#skills" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">SKILLS</a>-->
+<!--                <a href="#services" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">SERVICES</a>-->
+<!--                <a href="#portfolio" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">PORTFOLIO</a>-->
                 <a href="#contact" class="block py-2 hover:text-blue-500 menu-link font-ubuntu">CONTACT</a>
             </nav>
             <div class="flex flex-col space-y-5 place-items-center">
                 <div class="flex space-x-3 items-center justify-center text-white text-xl md:flex-wrap-reverse">
-                    <a class="hover:text-blue-500" href="https://www.linkedin.com/in/kamran-moqadam/" rel="follow"><i
+                    <a class="hover:text-blue-500" href="https://www.linkedin.com/in/kamran-moqadam/" rel="follow"
+                       target="_blank"><i
                             class="fa-brands fa-linkedin"></i></a>
-                    <a class="hover:text-blue-500" href="https://t.me/KamranMoqadam" rel="follow"><i
+                    <a class="hover:text-blue-500" href="https://t.me/KamranMoqadam" rel="follow" target="_blank"><i
                             class="fa-brands fa-telegram"></i></a>
-                    <a class="hover:text-blue-500" href="https://www.facebook.com/Kamranmoqadam/" rel="follow"><i
+                    <a class="hover:text-blue-500" href="https://www.facebook.com/Kamranmoqadam/" rel="follow"
+                       target="_blank"><i
                             class="fa-brands fa-facebook"></i></a>
-                    <a class="hover:text-blue-500" href="https://github.com/KamranMoqadam" rel="follow"><i
+                    <a class="hover:text-blue-500" href="https://github.com/KamranMoqadam" rel="follow" target="_blank"><i
                             class="fa-brands fa-github "></i></a>
-                    <a class="hover:text-blue-500" href="https://x.com/KamranMoqadam" rel="follow"><i
+                    <a class="hover:text-blue-500" href="https://x.com/KamranMoqadam" rel="follow" target="_blank"><i
                             class="fa-brands fa-twitter"></i></a>
-                    <a class="hover:text-blue-500" href="https://api.whatsapp.com/send?phone=989129680187"><i
+                    <a class="hover:text-blue-500" href="https://api.whatsapp.com/send?phone=989129680187"
+                       target="_blank"><i
                             class="fa-brands fa-whatsapp"></i></a>
-                    <a class="hover:text-blue-500" href="https://www.instagram.com/kamranmoqadam/" rel="follow"><i
+                    <a class="hover:text-blue-500" href="https://www.instagram.com/kamranmoqadam/" rel="follow"
+                       target="_blank"><i
                             class="fa-brands fa-instagram"></i></a>
                 </div>
                 <p class="font-ubuntu text-xs text-gray-400 flex items-end justify-center">
@@ -249,15 +259,16 @@
         </div>
     </aside>
     <!-- Main Content -->
-    <div class="font-ubuntu w-full lg:w-4/5 ml-auto grid-bg text-custom-dark dark:text-white">
+    <div class="font-ubuntu w-full lg:w-4/5 ml-auto grid-bg text-custom-dark dark:text-white inset-0 z-0">
         <!-- Grid Background -->
-        <div class="grid-overlay flex items-center justify-center"></div>
+        <div class="grid-overlay flex items-center justify-center inset-0 z-0"></div>
         <!-- Main Content -->
         <section id="home" class="section min-h-screen flex flex-col items-center justify-center space-y-4">
             <div class="flex space-x-14 items-center justify-center text-xl md:flex-wrap sm:flex-wrap max-sm:flex-wrap">
                 <div class="blob-container">
                     <div class="blob-border"></div>
-                    <div class="blob"><img src="https://www.kamranmoqadam.com/src/assets/images/profile.webp" alt="Profile"></div>
+                    <div class="blob"><img src="https://www.kamranmoqadam.com/src/assets/images/profile.webp"
+                                           alt="Profile"></div>
                 </div>
                 <div class="py-6 flex flex-col items-center justify-center space-y-8 max-sm:px-5">
                     <h1 class="px-4 text-3xl font-medium text-center leading-snug">
@@ -276,8 +287,12 @@
                 sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">
                 <h2 class="text-3xl font-bold text-center font-ubuntu">ABOUT ME</h2>
                 <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
-                <article>
-                    <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
+                <div class="w-11/12 px-4 py-2">
+                    <img src="./src/assets/images/header.webp" alt="About">
+                </div>
+                <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
+                <article class="w-11/12 space-y-2 pl-12 pr-8 pt-4 text-justify font-light max-lg:pl-1 max-lg:pr-0">
+                    <p>
                         I am a <strong>seasoned software developer</strong>. My foundation is strong in <strong>Python
                         programming</strong>. I hold a <strong>Ph.D. in Computer Science</strong>. My specialization is
                         <strong>Artificial Intelligence</strong>. I bring extensive experience across diverse technology
@@ -288,7 +303,7 @@
                         Frameworks used include <strong>Django</strong>, <strong>Flask</strong>, and
                         <strong>FastAPI</strong>.
                     </p>
-                    <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
+                    <p>
                         I possess advanced skills in <strong>database management</strong>. My specialties are <strong>PostgreSQL</strong>,
                         <strong>Redis</strong>, and <strong>MongoDB</strong>. On the front-end, I am proficient in
                         crafting modern interfaces. These interfaces are visually appealing. I use <strong>HTML</strong>,
@@ -298,7 +313,7 @@
                         involves processing and analyzing large datasets. I develop advanced <strong>predictive
                         models</strong> as well.
                     </p>
-                    <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
+                    <p>
                         My <strong>Data Science</strong> experience includes working with <strong>time-series
                         data</strong>. I have significant expertise in <strong>image processing</strong>. <strong>Object
                         detection</strong> is another area of my expertise. I leverage powerful tools like <strong>OpenCV</strong>
@@ -310,7 +325,7 @@
                         defects. I aim to enhance operational efficiency. Improving <strong>predictive
                         maintenance</strong> strategies is also key.
                     </p>
-                    <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
+                    <p>
                         My passion for technology aligns with <strong>environmental sustainability</strong>. My
                         undergraduate project focused on 3D animation. Its purpose was to promote <strong>environmental
                         protection</strong>. This showed my early commitment to ecological awareness. Furthermore, my
@@ -320,7 +335,7 @@
                         <strong>natural language processing (NLP)</strong>. It also highlighted my skills in <strong>deep
                         learning</strong> in a social context.
                     </p>
-                    <p class="w-11/12 pl-12 pr-8 pt-4 text-justify font-light">
+                    <p>
                         My technical proficiency encompasses <strong>automation</strong>. <strong>Web scraping</strong>
                         is another area of my skills. I utilize <strong>Selenium</strong> for efficient data extraction.
                         I also use it for interaction with web content. I am experienced in
@@ -334,13 +349,13 @@
                         sustainability</strong>.
                     </p>
                 </article>
-                <div class="py-12">
+                <div>
                     <h3 class="text-2xl pt-8 font-bold font-ubuntu">PERSONAL INFORMATION</h3>
                 </div>
 
                 <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
-                <div class="w-11/12 py-8 px-8 flex flex-row items-center justify-start max-md:flex-col">
-                    <ul class="w-11/12 pl-16 pr-8 text-start space-y-2 font-ubuntu list-disc marker:text-custom-dark dark:marker:text-custom-light">
+                <div class="w-11/12 px-8 flex flex-row items-center justify-start max-md:flex-col">
+                    <ul class="w-11/12 pl-16 pr-8 text-start space-y-2 font-ubuntu">
                         <li><strong>Birthday:</strong> 04.09.1997</li>
                         <li><strong>Age:</strong> 28</li>
                         <li><strong>Address:</strong> Valiasr St, Tehran, Iran</li>
@@ -351,7 +366,7 @@
                             <a href="tel:+989129680187" class="hover:text-blue-500">+98 912 96 80 187</a>
                         </li>
                     </ul>
-                    <ul class="max-md:pt-2 w-11/12 pl-16 pr-8 text-start space-y-2 font-ubuntu list-disc marker:text-custom-dark dark:marker:text-custom-light">
+                    <ul class="max-md:pt-2 w-11/12 pl-16 pr-8 text-start space-y-2 font-ubuntu">
                         <li><strong>Nationality:</strong> Iranian</li>
                         <li><strong>Education:</strong> Islamic Azad University</li>
                         <li><strong>Degree:</strong> Ph.D.</li>
@@ -371,46 +386,75 @@
                 <i class="fas fa-arrow-up"></i>
             </button>
         </section>
-        <section id="services" class="font-ubuntu section min-h-screen p-8 flex flex-col hidden">
-            <div class="font-ubuntu pt-10 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center
-                sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center ">
-                <h2 class="font-ubuntu text-3xl font-bold text-center">SERVICES</h2>
-                <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
-            </div>
-            <button class="scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-        </section>
-        <section id="portfolio" class="font-ubuntu section min-h-screen p-8 flex flex-col hidden">
-            <div class="font-ubuntu pt-10 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center
-                sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">
-                <h2 class="font-ubuntu text-3xl font-bold text-center">PORTFOLIO</h2>
-                <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
-            </div>
-            <button class="scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-        </section>
 
-        <section id="news" class="font-ubuntu section min-h-screen p-8 flex flex-col hidden">
-            <div class="font-ubuntu pt-10 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center
-                sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">
-                <h2 class="font-ubuntu text-3xl font-bold text-center">NEWS</h2>
-                <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
-            </div>
-            <button class="scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">
-                <i class="fas fa-arrow-up"></i>
-            </button>
-        </section>
+<!--        <section id="skills" class="font-ubuntu section min-h-screen p-8 flex flex-col hidden">-->
+<!--            <div class="font-ubuntu pt-10 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center-->
+<!--                sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">-->
+<!--                <h2 class="font-ubuntu text-3xl font-bold text-center">SKILLS</h2>-->
+<!--                <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">-->
+<!--            </div>-->
+<!--            <button class="scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">-->
+<!--                <i class="fas fa-arrow-up"></i>-->
+<!--            </button>-->
+<!--        </section>-->
+
+<!--        <section id="services" class="font-ubuntu section min-h-screen p-8 flex flex-col hidden">-->
+<!--            <div class="font-ubuntu pt-10 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center-->
+<!--                sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center ">-->
+<!--                <h2 class="font-ubuntu text-3xl font-bold text-center">SERVICES</h2>-->
+<!--                <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">-->
+<!--            </div>-->
+<!--            <button class="scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">-->
+<!--                <i class="fas fa-arrow-up"></i>-->
+<!--            </button>-->
+<!--        </section>-->
+<!--        <section id="portfolio" class="font-ubuntu section min-h-screen p-8 flex flex-col hidden">-->
+<!--            <div class="font-ubuntu pt-10 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center-->
+<!--                sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">-->
+<!--                <h2 class="font-ubuntu text-3xl font-bold text-center">PORTFOLIO</h2>-->
+<!--                <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">-->
+<!--            </div>-->
+<!--            <button class="scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">-->
+<!--                <i class="fas fa-arrow-up"></i>-->
+<!--            </button>-->
+<!--        </section>-->
+
         <section id="contact" class="font-ubuntu section min-h-screen p-8 flex flex-col hidden">
             <div class="font-ubuntu pt-10 flex flex-col lg:justify-start lg:items-start md:pt-10 md:justify-center md:items-center
                 sm:justify-center sm:items-center max-sm:justify-center max-sm:items-center">
-                <h2 class="font-ubuntu text-3xl font-bold text-center">CONTACT ME NOW</h2>
+                <h2 class="font-ubuntu text-3xl font-bold text-center">CONTACT ME</h2>
                 <hr class="w-11/12 h-px my-4 border-1 dark:bg-custom-light bg-custom-dark">
-                <form action="https://formspree.io/f/manedvkr" method="POST" class="space-y-8">
+                <h4 class="font-ubuntu text-2xl font-bold text-center p-4">
+                    Get in Touch
+                </h4>
+
+                <div id="map" class="w-11/12 h-96 !ml-4"></div>
+
+                <form action="https://formspree.io/f/manedvkr" method="POST" class="w-11/12 z-100 !ml-4">
+                    <div class="flex flex-col space-y-4 pt-10">
+                        <div class="flex flex-row space-x-8 max-md:flex-wrap max-md:space-y-4">
+                            <input type="text" name="name" id="name" required
+                                   class="flex max-md:mx-0 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                   placeholder="Your Name">
+
+                            <input type="email" name="email" id="email" required
+                                   class="flex  max-md:mx-0 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                   placeholder="name@gmail.com">
+                        </div>
+
+                        <textarea name="message" id="message" rows="5" required
+                                  class="z-100 block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                  placeholder="Leave a comment..."></textarea>
+                        <div class="flex justify-end lg:justify-end md:justify-center items-end sm:justify-center max-sm:justify-center">
+                            <button type="submit"
+                                    class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-2">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
                 </form>
             </div>
-            <button class="scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">
+            <button class="z-5000 scroll-to-top hidden bg-custom-dark dark:bg-custom-light text-white dark:text-custom-dark rounded-full w-10 h-10 p-2 text-xl cursor-pointer transition-opacity duration-300 fixed bottom-5 right-5">
                 <i class="fas fa-arrow-up"></i>
             </button>
         </section>
