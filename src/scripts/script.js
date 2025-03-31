@@ -233,3 +233,21 @@ if (typingText) {
     type();
 }
 
+const scroll_sections = document.querySelectorAll('.section');
+const scroll_buttons = document.querySelectorAll('.scroll-to-top');
+
+window.addEventListener('scroll', () => {
+    scroll_sections.forEach((section, index) => {
+        if (window.scrollY > section.offsetTop) {
+            scroll_buttons[index].classList.remove('hidden');
+        } else {
+            scroll_buttons[index].classList.add('hidden');
+        }
+    });
+});
+
+scroll_buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        scroll_sections[index].scrollIntoView({ behavior: 'smooth' });
+    });
+});
